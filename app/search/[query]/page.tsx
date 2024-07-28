@@ -10,7 +10,7 @@ const SearchPage = () => {
 
     useEffect(()=>{
         getFilteredData(query.toString());
-    },[query,getFilteredData]);
+    },[query, getFilteredData]);
  
     
     return (

@@ -11,7 +11,7 @@ const SingleProduct = ({singleProduct}:{singleProduct:any}) => {
         {
             singleProduct.map((product:any)=>{
                 return(
-                    <div className='flex'>
+                    <div key={product.id} className='flex'>
                 <div className='flex'>
                     <div className='bg-gray-100'>
                     <Image className='mix-blend-multiply' src={product.image} width={300} height={200} alt={product.title}/>
